@@ -205,52 +205,15 @@ body {
 /* Slide-in animation */
 @keyframes slideIn {
   0% {
-    transform: translateX(100%);
+    transform: translateX(250%);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(35);
   }
 }
 
 .image-section h1,
 .image-section button,
 .image-section p {
-  animation: slideIn 10s;
-}
-
-/* Slide-up animation */
-@keyframes slideUp {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.card,
-.text-center,
-.footer {
-  animation: slideUp 2s;
-  animation-fill-mode: backwards;
-}
-
-/* Zoom-in animation */
-@keyframes zoomIn {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-.carousel-inner,
-.contact-page {
-  animation: zoomIn 2s;
-  animation-fill-mode: backwards;
+  animation: slideIn 2s;
 }
