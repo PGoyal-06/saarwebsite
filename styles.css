@@ -40,7 +40,7 @@ body {
   position: relative;
   background-color: #2a092e;
   background-size: cover;
-  height: 500px;
+  height: 600px;
 }
 
 .image-section h1,
@@ -56,9 +56,9 @@ body {
 }
 
 .image-section p {
-  top: 40%;
+  top: 25%;
   width: 80%;
-  position: absolute;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
   color: white;
@@ -67,8 +67,10 @@ body {
 .image-section button {
   display: inline-block;
   text-decoration: none;
-  top: 60%;
+  top: 25%;
+  left: -50%;
   border: 2px solid white;
+  position: relative;
 }
 
 .image-section button:hover {
