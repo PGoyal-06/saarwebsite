@@ -208,7 +208,7 @@ body {
     transform: translateX(250%);
   }
   100% {
-    transform: translateX(35);
+    transform: translateX(25);
   }
 }
 
