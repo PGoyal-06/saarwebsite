@@ -204,10 +204,10 @@ body {
   background-color: #993299;
 }
 
-/* Slide-in animation */
+/* Slide-in animation left */
 @keyframes slideIn {
   0% {
-    transform: translateX(250%);
+    transform: translateX(-250%);
   }
   100% {
     transform: translateX(25);
@@ -218,4 +218,18 @@ body {
 .image-section button,
 .image-section p {
   animation: slideIn 2s;
+}
+
+/* Slide-in animation right */
+@keyframes slideRight {
+  0% {
+    transform: translate(250%);
+  }
+  100% {
+    transform: translateX(25);
+  }
+}
+
+.img-fluid {
+  animation: slideRight 2s;
 }
