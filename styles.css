@@ -1,5 +1,5 @@
 body {
-  background-color: #2a092e;
+  background-color: #f0f0f0;
 }
 .navbar-custom {
   background-color: transparent;
@@ -10,12 +10,12 @@ body {
 }
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav .nav-link {
-  color: whitesmoke;
+  color: #000000;
   transition: transform 0.3s;
 }
 
 .navbar-custom .navbar-nav .nav-link:hover {
-  color: #800080;
+  color: #5c2d91;
   transform: scale(1.1);
 }
 
@@ -24,7 +24,7 @@ body {
   display: block;
   width: 0;
   height: 2px;
-  background: #800080;
+  background: #5c2d91;
   transition: width 0.3s;
 }
 
@@ -33,12 +33,12 @@ body {
   transition: width 0.3s;
 }
 .navbar-custom.scrolled {
-  background-color: #2a092e;
+  background-color: #f0f0f0;
 }
 
 .image-section {
   position: relative;
-  background-color: #2a092e;
+  background-color: #f0f0f0;
   background-size: cover;
   height: 600px;
 }
@@ -48,7 +48,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  color: white;
+  color: #000000; /* Updated text color to black */
 }
 
 .image-section h1 {
@@ -61,7 +61,7 @@ body {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  color: white;
+  color: #000000; /* Updated text color to black */
 }
 
 .image-section button {
@@ -69,57 +69,63 @@ body {
   text-decoration: none;
   top: 25%;
   left: -50%;
-  border: 2px solid white;
+  border: 2px solid #4a4a4a;
   position: relative;
+  color: #000000; /* Updated button text color to black */
 }
 
 .image-section button:hover {
-  border: 2px solid #4c1e51;
-  background-color: #4c1e51;
+  border: 2px solid #5c2d91;
+  background-color: #5c2d91;
   transition: 1s;
-  color: white;
+  color: #f0f0f0;
 }
 
 .card {
-  background-color: #3b1440;
+  background-color: #e6e6fa;
 }
 
 .card-header,
 .card-body {
-  color: #d3d3d3;
+  color: #000000; /* Updated text color to black */
 }
 
 .card-body .btn {
   display: block;
   margin: auto;
+  color: #000000; /* Updated button text color to black */
 }
 
 .btn-primary {
-  border: 2px solid white;
+  border: 2px solid #4a4a4a;
   background-color: transparent;
   transition: background-color 0.3s;
+  color: #000000; /* Updated button text color to black */
 }
 
 .btn-primary:hover {
-  border: 2px solid #4e2b53;
-  background-color: #4e2b53;
+  border: 2px solid #5c2d91;
+  background-color: #5c2d91;
+  color: #f0f0f0;
 }
 
 .btn-explore {
-  border: 2px solid white;
+  border: 2px solid #4a4a4a;
   background-color: transparent;
   transition: background-color 0.3s;
   width: 25%;
   position: relative;
   left: 425px;
+  color: #000000; /* Updated button text color to black */
 }
 
 .btn-explore:hover {
-  background-color: #4c1e51;
+  background-color: #5c2d91;
+  color: #f0f0f0;
 }
 
 .carousel-inner {
-  background-color: #4c1e51;
+  background-color: #e6e6fa;
   transition: all 0.3s ease;
   top: 10%;
   padding-left: 50px;
@@ -128,7 +134,7 @@ body {
 
 .carousel-inner h5,
 .carousel-inner p {
-  color: #d3d3d3;
+  color: #000000; /* Updated text color to black */
 }
 
 .carousel-control-prev,
@@ -152,7 +158,7 @@ body {
 }
 
 .footer {
-  background-color: #3b1440;
+  background-color: #e6e6fa;
   position: relative;
   top: 50px;
 }
@@ -160,7 +166,7 @@ body {
 .footer h5,
 .footer p,
 .footer a {
-  color: #d3d3d3;
+  color: #000000; /* Updated text color to black */
 }
 .footer a {
   width: 50px;
@@ -169,39 +175,44 @@ body {
 }
 
 .footer a:hover {
-  color: #a64ca6;
+  color: #5c2d91;
 }
 
 .contact-page {
-  background-color: #f8f8fa;
+  background-color: #f0f0f0;
   padding: 20px;
 }
 
 .contact-page h2 {
-  color: #333333;
+  color: #000000; /* Updated text color to black */
 }
 
 .contact-page .form-control {
   border: 2px solid transparent;
   transition: border 0.3s;
-  background-color: #cc99cc;
-  color: #f8f9fa;
+  background-color: #e6e6fa;
+  color: #000000; /* Updated text color to black */
 }
 
 .contact-page .form-control:focus {
-  border: 2px solid #993299;
+  border: 2px solid #5c2d91;
   box-shadow: none;
 }
 
 .contact-page .btn-primary {
-  border: 2px solid #800080;
-  background-color: #800080;
-  color: #f8f9fa;
+  border: 2px solid #4a4a4a;
+  background-color: transparent;
   transition: background-color 0.3s;
+  width: 25%;
+  position: relative;
+  left: 425px;
+  top: 10px;
+  color: #000000; /* Updated button text color to black */
 }
 
 .contact-page .btn-primary:hover {
-  background-color: #993299;
+  background-color: #5c2d91;
+  color: #f0f0f0;
 }
 
 /* Slide-in animation left */
@@ -232,4 +243,11 @@ body {
 
 .img-fluid {
   animation: slideRight 2s;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #4a4a4a;
+  border-radius: 50%;
+  padding: 10px;
 }
