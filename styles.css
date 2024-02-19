@@ -48,7 +48,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  color: #000000; /* Updated text color to black */
+  color: #000000;
 }
 
 .image-section h1 {
@@ -61,7 +61,7 @@ body {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  color: #000000; /* Updated text color to black */
+  color: #000000;
 }
 
 .image-section button {
@@ -71,7 +71,7 @@ body {
   left: -50%;
   border: 2px solid #4a4a4a;
   position: relative;
-  color: #000000; /* Updated button text color to black */
+  color: #000000;
 }
 
 .image-section button:hover {
@@ -87,20 +87,20 @@ body {
 
 .card-header,
 .card-body {
-  color: #000000; /* Updated text color to black */
+  color: #000000;
 }
 
 .card-body .btn {
   display: block;
   margin: auto;
-  color: #000000; /* Updated button text color to black */
+  color: #000000;
 }
 
 .btn-primary {
   border: 2px solid #4a4a4a;
   background-color: transparent;
   transition: background-color 0.3s;
-  color: #000000; /* Updated button text color to black */
+  color: #000000;
 }
 
 .btn-primary:hover {
@@ -116,7 +116,7 @@ body {
   width: 25%;
   position: relative;
   left: 425px;
-  color: #000000; /* Updated button text color to black */
+  color: #000000;
 }
 
 .btn-explore:hover {
@@ -134,7 +134,7 @@ body {
 
 .carousel-inner h5,
 .carousel-inner p {
-  color: #000000; /* Updated text color to black */
+  color: #000000;
 }
 
 .carousel-control-prev,
@@ -163,10 +163,14 @@ body {
   top: 50px;
 }
 
+.footer .navbar-heading {
+  text-align: center;
+}
+
 .footer h5,
 .footer p,
 .footer a {
-  color: #000000; /* Updated text color to black */
+  color: #000000;
 }
 .footer a {
   width: 50px;
@@ -184,14 +188,14 @@ body {
 }
 
 .contact-page h2 {
-  color: #000000; /* Updated text color to black */
+  color: #000000;
 }
 
 .contact-page .form-control {
   border: 2px solid transparent;
   transition: border 0.3s;
   background-color: #e6e6fa;
-  color: #000000; /* Updated text color to black */
+  color: #000000;
 }
 
 .contact-page .form-control:focus {
@@ -207,7 +211,7 @@ body {
   position: relative;
   left: 425px;
   top: 10px;
-  color: #000000; /* Updated button text color to black */
+  color: #000000;
 }
 
 .contact-page .btn-primary:hover {
@@ -250,4 +254,87 @@ body {
   background-color: #4a4a4a;
   border-radius: 50%;
   padding: 10px;
+}
+
+@media (max-width: 768px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+
+  .navbar-custom {
+    position: static;
+  }
+
+  .image-section {
+    height: auto;
+    width: 100%;
+    padding: 20px; /* Add padding to make the text more readable */
+    box-sizing: border-box; /* Ensure padding doesn't increase the width */
+  }
+
+  .image-section h1,
+  .image-section button {
+    position: static;
+    transform: none;
+  }
+
+  .image-section h1 {
+    margin-top: 20px;
+  }
+
+  .image-section button {
+    margin-bottom: 20px;
+  }
+
+  .image-section p {
+    width: 100%;
+    transform: none;
+    position: relative;
+    left: 10px;
+    animation: slideInMobile 2s; /* Apply the new animation */
+  }
+
+  /* New slide-in animation for mobile */
+  @keyframes slideInMobile {
+    0% {
+      transform: translateX(250%);
+    }
+    100% {
+      transform: translateX(25);
+    }
+  }
+
+  .btn-explore {
+    width: 100%;
+    left: 0;
+  }
+
+  .carousel-inner {
+    top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .footer a {
+    left: 0;
+    width: auto;
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .contact-page .btn-primary {
+    width: 100%;
+    left: 0;
+  }
 }
