@@ -85,6 +85,11 @@ body {
   background-color: #e6e6fa;
 }
 
+.card:hover {
+  box-shadow: 0px 0px 20px 0px rgba(188, 188, 242, 5.6);
+  transition: 0.5s;
+}
+
 .card-header,
 .card-body {
   color: #000000;
@@ -179,7 +184,7 @@ body {
 }
 
 .footer a:hover {
-  color: #5c2d91;
+  color: #a768dd;
 }
 
 .contact-page {
@@ -245,6 +250,23 @@ body {
   }
 }
 
+/* Slide-in animation up */
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.card,
+.card-body {
+  animation: slideUp 2s;
+}
+
 .img-fluid {
   animation: slideRight 2s;
 }
@@ -269,8 +291,8 @@ body {
   .image-section {
     height: auto;
     width: 100%;
-    padding: 20px; /* Add padding to make the text more readable */
-    box-sizing: border-box; /* Ensure padding doesn't increase the width */
+    padding: 20px;
+    box-sizing: border-box;
   }
 
   .image-section h1,
@@ -292,7 +314,7 @@ body {
     transform: none;
     position: relative;
     left: 10px;
-    animation: slideInMobile 2s; /* Apply the new animation */
+    animation: slideInMobile 2s;
   }
 
   /* New slide-in animation for mobile */
